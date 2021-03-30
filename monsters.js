@@ -66,4 +66,4 @@ export const monsters = [
         dangerLevel: 'orange',
         price: 80000
     }
-]
+];
