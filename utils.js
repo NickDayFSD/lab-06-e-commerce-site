@@ -27,11 +27,19 @@ export function createMonsterListing() {
 
     const pTamed = document.createElement('p');
 
-    pTamed.classList.add('is-tamed');
-    pTamed.textContent = monsters.isTamed;
+    pTamed.textContent = monsters.isTamed ? 'Ready to obey you' : 'A danger to you and everyone else';
 
     const pPrice = document.createElement('p');
 
-    pPrice.classList.add('price');
-    pPrice.textContent = monsters.price;
+    pPrice.textContent = monsters.price.toLocaleString('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    }); 
+    const button = document.createElement('button');
+
+    button.textContent = 'Add to defense budget';
+
+    li.append(pName, pCategory, image, pDescription, pTamed, pPrice, button);
+
+    return li;
 }
