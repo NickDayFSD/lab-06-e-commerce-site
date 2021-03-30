@@ -4,13 +4,13 @@ export const monsters = [
     {
         id = '1',
         name = 'Black Bear',
-        image = '',
+        image = 'https://placebear.com/200/300',
         description = 'Can bite and claw trespassers.',
         category = 'Beast',
         isTamed = true,
-        dangerLevel = 1,
+        dangerLevel = 'yellow',
         price = 4000
-    }
+    },
 
     {
         id = '2',
@@ -19,9 +19,9 @@ export const monsters = [
         description = 'Can bite trespassers. Works well with other wolves.',
         category = 'Beast',
         isTamed = true,
-        dangerLevel = 1,
+        dangerLevel = 'yellow',
         price = 8000
-    }
+    },
 
     {
         id = '3',
@@ -30,9 +30,9 @@ export const monsters = [
         description = 'Looks like basic armor when still. Can slam trespassers.',
         category = 'Construct',
         isTamed = true,
-        dangerLevel = 1,
+        dangerLevel = 'green',
         price = 10000
-    }
+    },
 
     {
         id = '4',
@@ -41,9 +41,9 @@ export const monsters = [
         description = 'Great for dealing with offensive dinner guests. Can charge and ram them on command. Looks like a normal table.',
         category = 'Construct',
         isTamed = true,
-        dangerLevel = 2,
+        dangerLevel = 'green',
         price = 12000
-    }
+    },
 
     {
         id = '5',
@@ -52,9 +52,9 @@ export const monsters = [
         description = 'Very dangerous, purchase with caution. Can petrify anything with eye contact. Has a tendency to bite.',
         category = 'Monstrosity',
         isTamed = false,
-        dangerLevel = 3,
+        dangerLevel = 'red',
         price = 50000
-    }
+    },
 
     {
         id = '6',
@@ -63,7 +63,7 @@ export const monsters = [
         description = 'Can mimic anything close to its natural size. Appears as the normal object. Can bite, smack, or grapple trespassers. Can adhere to anything it touches.',
         category = 'Monstrosity',
         isTamed = false,
-        dangerLevel = 2,
+        dangerLevel = 'orange',
         price = 80000
     }
 ]
