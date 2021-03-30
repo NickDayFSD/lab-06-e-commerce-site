@@ -1,6 +1,6 @@
 //create monsters function
 
-export function createMonsterListing() {
+export function createMonsterListing(monsters) {
     const li = document.createElement('li');
 
     li.classList.add('monsters');
