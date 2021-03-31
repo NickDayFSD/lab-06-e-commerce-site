@@ -13,3 +13,19 @@
 3) Item number
 4) Description
  - Property | Description
+
+ ## Cart
+ 1) render out a table
+  - make some cart data (hard coded for sample)
+  - for each item in the cart, we need to go to the products array to get the price and name
+  - use the 'relational' data (renderFunction) to make table rows
+  - loop through the cart and append table rows to our HTML table
+
+function findById(someArray, someId) {
+    for (let item of someArray) {
+        if (item.id === someId) {
+            return item;
+        }
+    }
+}
+

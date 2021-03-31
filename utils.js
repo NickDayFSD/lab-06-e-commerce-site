@@ -4,7 +4,7 @@ export function createMonsterListing(monsters) {
     const li = document.createElement('li');
 
     li.classList.add('monsters');
-    li.style.background = monsters.dangerLevel;
+    li.style.borderColor = monsters.dangerLevel;
 
     const pName = document.createElement('p');
 
@@ -42,4 +42,16 @@ export function createMonsterListing(monsters) {
     li.append(pName, pCategory, image, pDescription, pTamed, pPrice, button);
 
     return li;
+}
+
+export function findById(someArray, someId) {
+    for (let item of someArray) {
+        if (item.id === someId) {
+            return item;
+        }
+    }
+}
+
+export function calcItemTotal(quantity, cost) {
+    return quantity * cost;
 }
