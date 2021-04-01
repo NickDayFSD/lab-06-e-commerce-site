@@ -1,1 +1,2 @@
-import './findById.test.js';
+import './utils.test.js';
+import './renderLine.test.js';

@@ -31,25 +31,10 @@ test('This test should return sampleArray[2] as a match from sampleArray', (expe
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.Equal(actual, expected);
+    expect.equal(actual, expected);
 });
 
 test('This test should return the 1200 as the product of quantity 2 and cost 600', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = 1200;
-    
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = calcItemTotal(2, 600);
-
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
-})
-
-test('', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 1200;

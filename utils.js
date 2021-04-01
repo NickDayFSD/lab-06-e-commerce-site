@@ -55,3 +55,22 @@ export function findById(someArray, someId) {
 export function calcItemTotal(quantity, cost) {
     return quantity * cost;
 }
+
+export function render(cartItem, selectedMonster) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+    const tdPrice = document.createElement('td');
+    
+    tdName.textContent = selectedMonster.name;
+    tdQuantity.textContent = cartItem.quantity;
+    tdPrice.textContent = `${calcItemTotal(selectedMonster.price, cartItem.quantity)} silver`;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+
+    return tr;
+}
+
+export function calcOrderTotal(cart, monsters) {
+    const total = 
+}

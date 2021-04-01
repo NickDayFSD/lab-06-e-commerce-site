@@ -1,4 +1,11 @@
-import { cart } from './cart-data.js';
-import { createTableRow } from '../utils.js';
-import { monsters } from '../monsters.js'
-
+export const cart = [
+    {
+        id: '3',
+        quantity: 2
+    },
+    
+    {
+        id: '5',
+        quantity: 1
+    },
+]
