@@ -20,4 +20,6 @@ for (let line of cart) {
 }
 
 const total = calcOrderTotal(cart, monsters);
-table.append(total);
+const tdBlank = document.createElement('td');
+const tdBlank2 = document.createElement('td');
+table.append(tdBlank, tdBlank2, total);
