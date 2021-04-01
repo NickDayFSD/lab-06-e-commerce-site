@@ -33,9 +33,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+}
+
+.nav {
+    background-color: cornsilk;
+    margin: 5px;
+    padding: 0px 5px 0px 5px;
+    border: black solid 1px;
+    border-radius: 3px;
 }
 
 footer {
