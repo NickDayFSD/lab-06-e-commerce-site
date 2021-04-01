@@ -88,3 +88,4 @@ export function calcOrderTotal(cart, monsters) {
     // return order total
     return total;
 }
+

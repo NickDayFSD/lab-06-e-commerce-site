@@ -23,6 +23,25 @@ for (let line of cart) {
 }
 
 const total = calcOrderTotal(cart, monsters);
-const tdBlank = document.createElement('td');
+const tdTotal = document.createElement('td');
+tdTotal.textContent = 'TOTAL:';
 const tdBlank2 = document.createElement('td');
-table.append(tdBlank, tdBlank2, `${total} silver`);
+table.append(tdBlank2, tdTotal, `${total} silver`);
+
+// place order, clear cart, and redirect to home page
+const orderButton = document.getElementById('place-order');
+
+orderButton.addEventListener('click', () => {
+    const confirmPurchase = confirm(`Your total is ${total} silver pieces. Proceed?`);
+
+    if (!confirmPurchase) {
+        alert('Order Cancelled');
+        localStorage.clear();
+        return;
+    }
+
+    //
+    alert('Order Confirmed. Expect delivery within a fortnight.');
+    localStorage.clear();
+    window.location.href = '../index.html';
+});
