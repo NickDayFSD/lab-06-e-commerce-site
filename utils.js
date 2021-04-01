@@ -41,8 +41,6 @@ export function createMonsterListing(monsters) {
 
     button.addEventListener('click', () => {
         addItemToCart(monsters.id);
-        // verified functioning
-        console.log(monsters.id);
     });
 
     button.textContent = 'Add to defense budget';

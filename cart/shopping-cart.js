@@ -1,5 +1,5 @@
 import { monsters } from '../monsters.js';
-import { cart } from './cart.js';
+import { getCart } from '../local-storage-utils.js';
 import {
     findById,
     render,
@@ -8,6 +8,9 @@ import {
 
 // get url from DOM
 const table = document.querySelector('.cart-list');
+
+// get cart from local storage
+const cart = getCart();
 
 // append tr to table
 for (let line of cart) {
@@ -22,4 +25,4 @@ for (let line of cart) {
 const total = calcOrderTotal(cart, monsters);
 const tdBlank = document.createElement('td');
 const tdBlank2 = document.createElement('td');
-table.append(tdBlank, tdBlank2, total);
+table.append(tdBlank, tdBlank2, `${total} silver`);
