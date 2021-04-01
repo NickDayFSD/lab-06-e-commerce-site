@@ -18,3 +18,6 @@ for (let line of cart) {
     // append table body
     table.append(tr);
 }
+
+const total = calcOrderTotal(cart, monsters);
+table.append(total);

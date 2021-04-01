@@ -72,5 +72,13 @@ export function render(cartItem, selectedMonster) {
 }
 
 export function calcOrderTotal(cart, monsters) {
-    const total = 
+    // create total variable
+    let total = 0;
+    // loop cart items and use calcItemTotal to calculate each line
+    for (let line of cart) {
+        const selectedMonster = findById(monsters, line.id)
+        total = calcItemTotal(selectedMonster.price, line.quantity) + total;
+    }
+    // return order total
+    return total;
 }
