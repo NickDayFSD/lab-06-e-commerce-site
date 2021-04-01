@@ -3,7 +3,7 @@
 export const monsters = [
     {
         id: '1',
-        name: 'Black Bear',
+        name: 'Brown Bear',
         image: 'http://placebear.com/200/300',
         description: 'Can bite and claw trespassers.',
         category: 'Beast',

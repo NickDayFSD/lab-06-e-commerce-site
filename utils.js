@@ -1,5 +1,7 @@
 //create monsters function
 
+import { addItemToCart } from './local-storage-utils.js';
+
 export function createMonsterListing(monsters) {
     const li = document.createElement('li');
 
@@ -36,6 +38,12 @@ export function createMonsterListing(monsters) {
         currency: 'USD',
     }); 
     const button = document.createElement('button');
+
+    button.addEventListener('click', () => {
+        addItemToCart(monsters.id);
+        // verified functioning
+        console.log(monsters.id);
+    });
 
     button.textContent = 'Add to defense budget';
 
