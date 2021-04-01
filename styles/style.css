@@ -2,7 +2,7 @@
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(20, 80%, 60%, 1);
+    --color2: cornsilk;
     --color3: hsla(1, 100%, 30%, 1);
     --color4: hsla(40, 41%, 94%, 1);
     --color5: hsla(45, 28%, 95%, 1); 
