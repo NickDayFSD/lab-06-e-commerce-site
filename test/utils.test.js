@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById } from '../utils.js'
-import { calcItemTotal } from '../utils.js'
+import { findById } from '../utils.js';
+import { calcItemTotal } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -21,7 +21,7 @@ test('This test should return sampleArray[2] as a match from sampleArray', (expe
             id: 'dinner',
             item: 'steak'
         }
-    ]
+    ];
 
     const expected = sampleArray[2];
     
@@ -47,4 +47,4 @@ test('This test should return the 1200 as the product of quantity 2 and cost 600
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
-})
+});
