@@ -1,5 +1,5 @@
 import { monsters } from '../monsters.js';
-import { cart } from './cart.js';
+import { getCart } from '../local-storage-utils.js';
 import {
     findById,
     render,
@@ -8,6 +8,9 @@ import {
 
 // get url from DOM
 const table = document.querySelector('.cart-list');
+
+// get cart from local storage
+const cart = getCart();
 
 // append tr to table
 for (let line of cart) {
@@ -20,6 +23,25 @@ for (let line of cart) {
 }
 
 const total = calcOrderTotal(cart, monsters);
-const tdBlank = document.createElement('td');
+const tdTotal = document.createElement('td');
+tdTotal.textContent = 'TOTAL:';
 const tdBlank2 = document.createElement('td');
-table.append(tdBlank, tdBlank2, total);
+table.append(tdBlank2, tdTotal, `${total} silver`);
+
+// place order, clear cart, and redirect to home page
+const orderButton = document.getElementById('place-order');
+
+orderButton.addEventListener('click', () => {
+    const confirmPurchase = confirm(`Your total is ${total} silver pieces. Proceed?`);
+
+    if (!confirmPurchase) {
+        alert('Order Cancelled');
+        localStorage.clear();
+        return;
+    }
+
+    //
+    alert('Order Confirmed. Expect delivery within a fortnight.');
+    localStorage.clear();
+    window.location.href = '../index.html';
+});

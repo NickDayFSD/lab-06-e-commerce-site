@@ -3,13 +3,13 @@
 export const monsters = [
     {
         id: '1',
-        name: 'Black Bear',
+        name: 'Brown Bear',
         image: 'http://placebear.com/200/300',
         description: 'Can bite and claw trespassers.',
         category: 'Beast',
         isTamed: true,
         dangerLevel: 'yellow',
-        price: 4000
+        price: 400
     },
 
     {
@@ -20,7 +20,7 @@ export const monsters = [
         category: 'Beast',
         isTamed: true,
         dangerLevel: 'yellow',
-        price: 8000
+        price: 800
     },
 
     {
@@ -31,7 +31,7 @@ export const monsters = [
         category: 'Construct',
         isTamed: true,
         dangerLevel: 'green',
-        price: 10000
+        price: 1000
     },
 
     {
@@ -42,7 +42,7 @@ export const monsters = [
         category: 'Construct',
         isTamed: true,
         dangerLevel: 'green',
-        price: 12000
+        price: 1200
     },
 
     {
@@ -53,7 +53,7 @@ export const monsters = [
         category: 'Monstrosity',
         isTamed: false,
         dangerLevel: 'red',
-        price: 50000
+        price: 5000
     },
 
     {
@@ -64,6 +64,6 @@ export const monsters = [
         category: 'Monstrosity',
         isTamed: false,
         dangerLevel: 'orange',
-        price: 80000
+        price: 8000
     }
 ];
