@@ -12,7 +12,7 @@ const table = document.querySelector('.cart-list');
 // append tr to table
 for (let line of cart) {
     // findById to find corresponding product
-    const selectedMonster = findById(monsters, line.id)
+    const selectedMonster = findById(monsters, line.id);
     // pass these to render and capture in variable
     const tr = render(line, selectedMonster);
     // append table body
