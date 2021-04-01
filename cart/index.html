@@ -8,30 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/cart.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <h2>
-            These are the MONSTERS we have in stock!
+            These are the MONSTERS you have selected!
         </h2>
     </header>
     <main>
         <section class="main-section">
-
-            <ul class="monster-list">
-
-            </ul>
-
+            <table class="cart-list">
+                <tr>
+                    <th>Monster</th>
+                    <th>How Many</th>
+                    <th>Debt</th>
+                </tr>
+            </table>
+            <button id="place-order">Commit Debt</button>
         </section>
+
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="product.js"></script>
+    <script type="module" src="shopping-cart.js"></script>
 </body>
 
 </html>
